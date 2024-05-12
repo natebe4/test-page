@@ -385,20 +385,15 @@ nav {
     padding-bottom: 70px;
 }
 
-/* Add this CSS to your existing stylesheet or create a new one */
 #myForm {
     display: none;
     position: fixed;
     top: 50%;
-    /* Position the form vertically in the middle */
     left: 50%;
-    /* Position the form horizontally in the middle */
     transform: translate(-50%, -50%);
-    /* Center the form */
     background-color: white;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     z-index: 9999;
-    /* Ensure the form appears on top of other content */
 }
