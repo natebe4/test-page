@@ -28,10 +28,26 @@
             <article class="content">
                 <a href="#about" class="nav-text">About</a>
                 <a href="#projects" class="nav-text">Projects</a>
-                <a href="" class="nav-text">Contact</a>
+                <!-- <a href="" class="nav-text">Contact</a> -->
             </article>
         </section>
         <!-- NAV BAR END -->
+
+        <!-- HAMBURGER MENU -->
+
+        <!-- Hamburger Menu Icon -->
+        <button class="hamburger-menu" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+
+        <div class="menu-items">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>>
+        </div>
+        <!-- END HAMBURGER MENU -->
+
     </nav>
 
     <main>
@@ -53,18 +69,31 @@
                 </div>
             </div>
 
-            <form id="myForm" style="display: none;">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
+            <div class="dim-overlay"></div>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
-
-                <input type="submit" value="Submit">
-            </form>
+            <div class="dim-content">
+                <div class="container">
+                    <form id="myForm" action="" method="post" style="display: none;">
+                        <h3>Contact</h3>
+                        <fieldset>
+                            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                        </fieldset>
+                        <fieldset>
+                            <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+                        </fieldset>
+                        <fieldset>
+                            <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                        </fieldset>
+                        <fieldset>
+                            <button name="submit" type="submit" id="contact-submit"
+                                data-submit="...Sending">Submit</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
 
 
         </section>
@@ -102,6 +131,10 @@
                             <img src="./images/icons8-javascript-48.png" alt="" class="javascript">
                             <p>JavaScript</p>
                         </div>
+                        <div class="language-icons">
+                            <img src="./images/icons8-react-80.png" alt="" class="javascript">
+                            <p>React</p>
+                        </div>
                     </div>
                     <div class="resume-button">
                         <a href="#" class="resume-text">View Resume</a>
@@ -127,6 +160,7 @@
                 <div class="project-1">
                     <div class="project-img">
                         <img src="./images/clipboardscreenshot.png" alt="">
+
                     </div>
                     <div class="project-info">
                         <h4 class="project-title">Clipboard Landing Page</h4>
@@ -134,8 +168,14 @@
                             the company Clipboard, a productivity app.</p>
                         <p class="project-languages-used">Languages Used</p>
                         <div class="languages-used-icons">
-                            <img src="./images/icons8-html-5-48.png" alt="">
-                            <img src="./images/icons8-css3-48.png" alt="">
+                            <div class="image-container" id="tooltip-html">
+                                <img src="./images/icons8-html-5-48.png" alt="">
+                                <span class="tooltip-text">HTML</span>
+                            </div>
+                            <div class="image-container" id="tooltip-css">
+                                <img src="./images/icons8-css3-48.png" alt="">
+                                <span class="tooltip-text">CSS</span>
+                            </div>
                         </div>
                         <div class="projects-links">
                             <a href="https://natebe4.github.io/Clipboard-Landing-Page/" class="view-live-demo">Live
@@ -148,6 +188,7 @@
                 <div class="project-2">
                     <div class="project-img">
                         <img src="./images/productcardscreenshot.png" alt="">
+
                     </div>
                     <div class="project-info">
                         <h4 class="project-title">Product Preview Card</h4>
@@ -155,8 +196,14 @@
                             for an e-commerce company featuring a perfume.</p>
                         <p class="project-languages-used">Languages Used</p>
                         <div class="languages-used-icons">
-                            <img src="./images/icons8-html-5-48.png" alt="">
-                            <img src="./images/icons8-css3-48.png" alt="">
+                            <div class="image-container" id="tooltip-html">
+                                <img src="./images/icons8-html-5-48.png" alt="">
+                                <span class="tooltip-text">HTML</span>
+                            </div>
+                            <div class="image-container" id="tooltip-css">
+                                <img src="./images/icons8-css3-48.png" alt="">
+                                <span class="tooltip-text">CSS</span>
+                            </div>
                         </div>
                         <div class="projects-links">
                             <a href="https://natebe4.github.io/Product-Preview-Card/" class="view-live-demo">Live
@@ -169,6 +216,7 @@
                 <div class="project-3">
                     <div class="project-img">
                         <img src="./images/ordersummaryscreenshot.png" alt="">
+
                     </div>
                     <div class="project-info">
                         <h4 class="project-title">Order Summary Component</h4>
@@ -177,8 +225,14 @@
                             customer would see before checkout.</p>
                         <p class="project-languages-used">Languages Used</p>
                         <div class="languages-used-icons">
-                            <img src="./images/icons8-html-5-48.png" alt="">
-                            <img src="./images/icons8-css3-48.png" alt="">
+                            <div class="image-container" id="tooltip-html">
+                                <img src="./images/icons8-html-5-48.png" alt="">
+                                <span class="tooltip-text">HTML</span>
+                            </div>
+                            <div class="image-container" id="tooltip-css">
+                                <img src="./images/icons8-css3-48.png" alt="">
+                                <span class="tooltip-text">CSS</span>
+                            </div>
                         </div>
                         <div class="projects-links">
                             <a href="https://natebe4.github.io/Order-Summary-Component/" class="view-live-demo">Live
@@ -191,6 +245,7 @@
                 <div class="project-4">
                     <div class="project-img">
                         <img src="./images/blogpreviewscreenshot.png" alt="">
+
                     </div>
                     <div class="project-info">
                         <h4 class="project-title">Blog Preview Card</h4>
@@ -199,8 +254,14 @@
                             for a website with functional elements.</p>
                         <p class="project-languages-used">Languages Used</p>
                         <div class="languages-used-icons">
-                            <img src="./images/icons8-html-5-48.png" alt="">
-                            <img src="./images/icons8-css3-48.png" alt="">
+                            <div class="image-container" id="tooltip-html">
+                                <img src="./images/icons8-html-5-48.png" alt="">
+                                <span class="tooltip-text">HTML</span>
+                            </div>
+                            <div class="image-container" id="tooltip-css">
+                                <img src="./images/icons8-css3-48.png" alt="">
+                                <span class="tooltip-text">CSS</span>
+                            </div>
                         </div>
                         <div class="projects-links">
                             <a href="https://natebe4.github.io/Blog-Preview-Card/" class="view-live-demo">Live
@@ -218,21 +279,31 @@
         <section class="designs" id="designs">
             <div class="project-3">
                 <div class="project-img">
-                    <img src="./images/Design One.png" id="designScreenshot" alt="">
+                    <img src="./images/Design One.png" alt="" id="designScreenshot">
+
+
                 </div>
                 <div class="project-info">
-                    <h4 class="project-title">Order Summary Component</h4>
-                    <p class="project-text">A project for Front End Mentor. A simple e-commerce order summary that a
-                        customer would see before checkout.</p>
+                    <h4 class="project-title">Portfolio Website</h4>
+                    <p class="project-text">A portfolio webpage design.</p>
                     <p class="project-languages-used">Languages Used</p>
                     <div class="languages-used-icons">
-                        <img src="./images/icons8-html-5-48.png" alt="">
-                        <img src="./images/icons8-css3-48.png" alt="">
+                        <div class="image-container" id="tooltip-html">
+                            <img src="./images/icons8-html-5-48.png" alt="">
+                            <span class="tooltip-text">HTML</span>
+                        </div>
+                        <div class="image-container" id="tooltip-css">
+                            <img src="./images/icons8-css3-48.png" alt="">
+                            <span class="tooltip-text">CSS</span>
+                        </div>
+                        <div class="image-container" id="tooltip-javascript">
+                            <img src="./images/icons8-javascript-48.png" alt="">
+                            <span class="tooltip-text">JavaScript</span>
+                        </div>
                     </div>
                     <div class="projects-links">
                         <a href="https://www.figma.com/file/XLqSpjHcaEbKXFOT4LfzFc/Untitled?type=design&node-id=1%3A2&mode=design&t=yajKvpIGNu8ZHM08-1"
-                            class="view-live-demo">Live
-                            Demo</a>
+                            class="view-live-demo">View Design</a>
                     </div>
                 </div>
             </div>
@@ -260,7 +331,7 @@
             <div class="footer-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
-                <a href="">Contact</a>
+                <!-- <a href="">Contact</a> -->
             </div>
             <div class="social-links">
                 <a href="https://github.com/natebe4">
