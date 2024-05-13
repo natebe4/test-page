@@ -687,6 +687,15 @@ textarea::placeholder {
         color: #f4d35e;
         margin-top: -20px;
     }
+
+    .language-programs {
+        /* border: 1px solid pink; */
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding-bottom: 20px;
+        gap: 40px;
+    }
 }
 
 /* Media Query for smaller screens */
